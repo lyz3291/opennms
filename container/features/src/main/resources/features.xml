@@ -337,7 +337,7 @@
 
     <feature name="spring-security32" description="Spring :: Security" version="${springSecurityVersion}">
       <!-- spring-web is necessary for HTTP remoting -->
-      <feature version="[4.2,4.3)">spring-web</feature>
+      <feature version="[4.3,5.0)">spring-web</feature>
       <feature>commons-codec</feature>
 
       <bundle>wrap:mvn:org.springframework.ldap/spring-ldap-core/1.3.2.RELEASE$Export-Package=org.springframework.ldap*;version="1.3.2"</bundle>
@@ -384,8 +384,8 @@
     
     
     <feature name="opennms-core" description="OpenNMS :: Core" version="${project.version}">
-      <feature version="[4.2,4.3)">spring</feature>
-      <feature version="[4.2,4.3)">spring-orm</feature>
+      <feature version="[4.3,5.0)">spring</feature>
+      <feature version="[4.3,5.0)">spring-orm</feature>
 
       <feature>commons-io</feature>
       <feature>dnsjava</feature>
@@ -456,10 +456,10 @@
     </feature>
 
     <feature name="opennms-model" description="OpenNMS :: Model" version="${project.version}">
-      <feature version="[4.2,4.3)">spring</feature>
-      <feature version="[4.2,4.3)">spring-jdbc</feature>
-      <feature version="[4.2,4.3)">spring-orm</feature>
-      <feature version="[4.2,4.3)">spring-tx</feature>
+      <feature version="[4.3,5.0)">spring</feature>
+      <feature version="[4.3,5.0)">spring-jdbc</feature>
+      <feature version="[4.3,5.0)">spring-orm</feature>
+      <feature version="[4.3,5.0)">spring-tx</feature>
 
       <feature>commons-io</feature>
       <feature>commons-lang</feature>
@@ -477,7 +477,7 @@
     </feature>
 
     <feature name="opennms-collection-api" description="OpenNMS :: Collection :: API" version="${project.version}">
-      <feature version="[4.2,4.3)">spring</feature>
+      <feature version="[4.3,5.0)">spring</feature>
 
       <feature>opennms-model</feature>
       <feature>opennms-rrd-api</feature>
@@ -626,7 +626,7 @@
     </feature>
 
     <feature name="opennms-events-api" description="OpenNMS :: Events :: API" version="${project.version}">
-      <feature version="[4.2,4.3)">spring</feature>
+      <feature version="[4.3,5.0)">spring</feature>
 
       <feature>camel-core</feature>
       <feature>commons-lang3</feature>
@@ -721,7 +721,7 @@
     </feature>
 
     <feature name="opennms-poller-api" description="OpenNMS :: Poller :: API" version="${project.version}">
-      <feature version="[4.2,4.3)">spring</feature>
+      <feature version="[4.3,5.0)">spring</feature>
 
       <feature>hibernate36</feature>
 
@@ -730,7 +730,7 @@
     </feature>
 
     <feature name="opennms-measurements-api" description="OpenNMS :: Measurements :: API" version="${project.version}">
-      <feature version="[4.2,4.3)">spring</feature>
+      <feature version="[4.3,5.0)">spring</feature>
 
       <feature>commons-lang</feature>
       <feature version="${guavaVersion}">guava</feature>
@@ -788,7 +788,7 @@
     </feature>
 
     <feature name="opennms-rrd-api" description="OpenNMS :: RRD :: API" version="${project.version}">
-      <feature version="[4.2,4.3)">spring</feature>
+      <feature version="[4.3,5.0)">spring</feature>
 
       <feature>opennms-core</feature>
 
@@ -796,7 +796,7 @@
     </feature>
 
     <feature name="opennms-rrd-jrobin" description="OpenNMS :: RRD :: JRobin" version="${project.version}">
-      <feature version="[4.2,4.3)">spring</feature>
+      <feature version="[4.3,5.0)">spring</feature>
 
       <feature>jrobin</feature>
       <feature>opennms-rrd-api</feature>
@@ -829,7 +829,7 @@
     </feature>
 
     <feature name="opennms-syslogd" description="OpenNMS :: Syslogd" version="${project.version}">
-      <feature version="[4.2,4.3)">spring</feature>
+      <feature version="[4.3,5.0)">spring</feature>
       <feature>activemq-camel</feature>
       <feature>camel-core</feature>
       <feature>camel-http</feature>
@@ -865,7 +865,7 @@
 
     <!-- TrapD feature -->
     <feature name="opennms-trapd" description="OpenNMS :: Trapd" version="${project.version}">
-      <feature version="[4.2,4.3)">spring</feature>
+      <feature version="[4.3,5.0)">spring</feature>
       <feature>camel-core</feature>
       <feature>camel-http</feature>
       <feature version="${guavaVersion}">guava</feature>
