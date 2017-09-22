@@ -69,6 +69,19 @@
             <destName>${project.artifactId}-${project.version}-features.xml.sha1</destName>
             <lineEnding>unix</lineEnding>
         </file>
+        <!-- OpenNMS-modified copy of Karaf's mvn:org.apache.karaf.features/enterprise/${karafVersion}/xml/features -->
+        <file>
+            <source>${project.build.directory}/filtered-resources/features/enterprise.xml</source>
+            <outputDirectory>system/org/opennms/container/${project.artifactId}/${project.version}</outputDirectory>
+            <destName>${project.artifactId}-${project.version}-enterprise.xml</destName>
+            <lineEnding>unix</lineEnding>
+        </file>
+        <file>
+            <source>${project.build.directory}/filtered-resources/features/enterprise.xml.sha1</source>
+            <outputDirectory>system/org/opennms/container/${project.artifactId}/${project.version}</outputDirectory>
+            <destName>${project.artifactId}-${project.version}-enterprise.xml.sha1</destName>
+            <lineEnding>unix</lineEnding>
+        </file>
         <!-- OpenNMS-modified copy of Karaf's mvn:org.apache.karaf.features/spring/${karafVersion}/xml/features -->
         <file>
             <source>${project.build.directory}/filtered-resources/features/spring.xml</source>

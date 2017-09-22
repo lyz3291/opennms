@@ -163,7 +163,12 @@
                       <classifier>features</classifier>
                     </artifact>
                     <artifact>
-                      <file>target/filtered-resources/features/spring.xml</file>
+                      <file>${project.build.directory}/filtered-resources/features/enterprise.xml</file>
+                      <type>xml</type>
+                      <classifier>enterprise</classifier>
+                    </artifact>
+                    <artifact>
+                      <file>${project.build.directory}/filtered-resources/features/spring.xml</file>
                       <type>xml</type>
                       <classifier>spring</classifier>
                     </artifact>
